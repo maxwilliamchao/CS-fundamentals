@@ -20,7 +20,7 @@ function binarySearch(stuff, searchElement) {
     console.log('End Index: ', maxIndex)
     console.log('Current Element: ', stuff[currentIndex])
 
-    //test it
+    //test it out
     if (currentElement < searchElement) {
       //if less than target, look above value
       minIndex = currentIndex + 1;
