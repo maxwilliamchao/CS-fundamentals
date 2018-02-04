@@ -9,3 +9,10 @@ for (var index = 0; index < arraySize; index++) {
 
   array.push(randomNumber);
 }
+
+function insertionSort(items) {
+  //index into unsorted section, moving right
+  var i;
+  //index into sorted section, moving left
+  var j;
+}
