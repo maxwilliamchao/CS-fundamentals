@@ -15,4 +15,26 @@ function insertionSort(items) {
   var i;
   //index into sorted section, moving left
   var j;
-}
+
+  for (i = 0; i < items.length; i++) {
+
+    //store the current value to insert later which will be overwritten by the shift
+    var value = items[i];
+
+    //starting at the element ( items[i - 1]) before the current value (value, items[i])move left through the array (decrementing j) and shift each value to the right (move to items[j + 1]) if it is larger than the current value
+    //stop when you reach a value which is less than or equal to the current value
+    for (j = i - 1; j > -1 && items[j] > value; j--) {items[j + 1] = items[j];
+    }
+
+    //insert the value once you have reached the location where items[j] <= value
+    items[j + 1] = value;
+  }
+
+  return items;
+}  
+
+console.log('PRE-SORT');
+console.log(array.join(''));
+console.log('--------------------------');
+console.log('POST-SORT');
+console.log(insertionSort(array).join(' '));
