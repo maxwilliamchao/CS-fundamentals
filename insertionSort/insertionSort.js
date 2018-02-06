@@ -34,7 +34,7 @@ function insertionSort(items) {
 }  
 
 console.log('PRE-SORT');
-console.log(array.join(''));
+console.log(array.join(' '));
 console.log('--------------------------');
 console.log('POST-SORT');
 console.log(insertionSort(array).join(' '));
